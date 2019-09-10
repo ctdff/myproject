@@ -12,6 +12,9 @@
 	width:36%;
 	float:left;
 }
+.mui-table-view-cell{
+	margin-top: 5px;
+}
 .mui-table-view-cell div label{
 	margin-left: 0;
 	font-weight: normal;
