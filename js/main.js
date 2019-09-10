@@ -8,7 +8,7 @@ require.config({
 	}
 });
 
-require(["index","common","router","index","login","home","workList","nsgl","mine","xtgl","about","details","resetpassword"], function(index,common,router,index,login,home,workList,nsgl,mine,test,xtgl,about,details,resetpassword){
+require(["index","common","router","index","login","home","workList","nsgl","mine","xtgl","about","details","resetpassword","farmworkmanage"], function(index,common,router,index,login,home,workList,nsgl,mine,test,xtgl,about,details,resetpassword,farmworkmanage){
 	var router_mappings = [
 		{
 			path:"/", resource:"views/login.html", componet:login
@@ -40,6 +40,9 @@ require(["index","common","router","index","login","home","workList","nsgl","min
 		},
 		{
 			path:"/resetpassword", resource:"views/resetpassword.html", componet:resetpassword	
+		},
+		{
+			path:"/farmworkmanage", resource:"views/farmworkmanage.html", componet:home
 		}
 	];
 
@@ -47,11 +50,11 @@ require(["index","common","router","index","login","home","workList","nsgl","min
 	router.mapper(router_mappings);
 	router.init();
 	//ÊÇ·ñµÇÂ¼£¿
-	if(!common.isLogin()){
+	/* if(!common.isLogin()){
 		router.go("/login");
 		return false;
 	}else{
 		console.log("ÎªÉ¶");
 		//router.go("/home");
-	}
+	} */
 });
