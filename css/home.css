@@ -1,12 +1,20 @@
 .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
-	color: #333;
-	font-weight: bold;
+	color: #49b82d;
+    border-bottom: 2px solid #49b82d !important;
+}
+.p-home .scrolltab{
+	height: 46px;
+    background: #fff;
+}
+.p-home .mui-fullscreen{
+	bottom: 60px;
 }
 .mui-segmented-control.mui-segmented-control-inverted .mui-control-item{
 	color: #a09a9a;
 }
 .mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
 	border-top: none;
+	border-bottom: none;
 }
 .p-home ul{
 	padding:2px 10px;
@@ -19,25 +27,27 @@
     margin-bottom: 10px;
     line-height: 28px;
 }
-.p-home ul li{
+.p-home ul .item{
 	padding-left: 20px;
 }
-.p-home ul li .row .proName{
-	margin-left: 30%;
+.p-home ul .item .row{
+	padding-bottom: 8px;
+    margin: 8px 0;
+    border-bottom: 1px dashed #c1bbbb;
 }
-.p-home ul li .row .area{
+.p-home ul .item .row .type{
+	color: #49b82d;
+}
+.p-home ul .infos{
+	color: #a09a9a;
+}
+.p-home .item .infos .rit,.p-home ul .item .row .area{
 	float: right;
-}
-.p-home ul li .time span{
-	margin-left: 10px;
-}
-.p-home ul li h3{
-	height: 30px;
-	line-height: 30px;
-	color: #191818;
-}
-.p-home ul li .infos{
-	    margin-left: 20px;
+    width: 70%;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .p-home .add{
 	position: absolute;

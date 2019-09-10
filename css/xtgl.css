@@ -1,0 +1,30 @@
+.mui-media-body{
+	overflow: hidden;
+	text-align: center;
+	margin-top: 5%;
+}
+.mui-navigate-right remove-after:after{
+	content: "";
+}
+.div-header{
+	font-weight: bolder;
+	text-align: right;
+	width:36%;
+	float:left;
+}
+.mui-table-view-cell div label{
+	margin-left: 0;
+	font-weight: normal;
+	text-align: left;
+	margin-left: 10px;
+}
+.mui-table-view-cell div label label{
+	margin-left: 0;
+	font-weight: normal;
+	text-align: left;
+}
+.p-about{
+	margin-top:30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}

@@ -1,7 +1,7 @@
 <div class="p-home">
 	<div  class="mui-slider mui-fullscreen" >
-		<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" >
-			<div class="mui-scroll" id="pro_type">
+		<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="height: 46px;background: #fff;">
+			<div class="mui-scroll" id="pro_type" style="width: 100%;">
 				<a class="mui-control-item mui-active" id="zz" data-index=0 					href="#slider_zz">
 					种植
 				</a>
@@ -15,41 +15,42 @@
 				
 			</div>
 		</div>
-		<div class="mui-slider-group">
+	
+		<div class="mui-slider-group" style="top:52px;">
 			<div id="slider_zz" class="mui-slider-item mui-control-content mui-active">
 				<div  class="mui-scroll-wrapper">
 					<div class="mui-scroll">
 						<ul id="item1" curpage=1>
 							<li class="item">
 								<div class="row">
-									<span class="land">地块</span>
-									<span class="proName">土豆</span>
-									<span class="area">100亩</span>
+									<span class="land">土豆-10块</span>
+									<span class="area">编号：1001</span>
 								</div>
-								<div class="time">
-									<strong>建档时间：</strong>
-									<span>2019-10-10</span>
+								
+								<div class="infos">基地名称：
+									<span class="rit">种植合作社</span>     
 								</div>
-								<h3>最近农事操作：</h3>
-								<div class="infos">
-									<div >2019-11-11 09:09         除草剂  10kg</div>
-									<div >2019-11-11 09:09         除草剂  10kg</div>
+								<div class="infos">操作人：
+									<span class="rit"> 张三</span>
+								</div>
+								<div class="infos">开始时间：
+									<span class="rit">2019-10-10</span> 
 								</div>
 							</li>
-							<li>
+							<li class="item">
 								<div class="row">
-									<span class="land">地块</span>
-									<span class="proName">土豆</span>
-									<span class="area">100亩</span>
+									<span class="land">土豆-10块</span>
+									<span class="area">编号：1001</span>
 								</div>
-								<div class="time">
-									<strong>建档时间：</strong>
-									<span>2019-10-10</span>
+								
+								<div class="infos">基地名称：
+									<span class="rit">种植合作社</span>     
 								</div>
-								<h3>最近农事操作：</h3>
-								<div class="infos">
-									<div >2019-11-11 09:09         除草剂  10kg</div>
-									<div >2019-11-11 09:09         除草剂  10kg</div>
+								<div class="infos">操作人：
+									<span class="rit"> 张三</span>
+								</div>
+								<div class="infos">开始时间：
+									<span class="rit">2019-10-10</span> 
 								</div>
 							</li>
 						</ul>
@@ -108,16 +109,35 @@
 			
 		</div>
 		
+		
+		
+		
+		
+		
 	</div>
-	
-	
-	<div class="add"><button>新建档案</button></div>
-	
 	
 </div>
 
-  
- 
+ <script id="zzData"  type="text/html">
+	{{each list  value index}}
+		<li class="item">
+			<div class="row">
+				<span class="land">土豆-10块</span>
+				<span class="area">编号：1001</span>
+			</div>
+			
+			<div class="infos">基地名称：
+				<span class="rit">种植合作社</span>     
+			</div>
+			<div class="infos">操作人：
+				<span class="rit"> 张三</span>
+			</div>
+			<div class="infos">开始时间：
+				<span class="rit">2019-10-10</span> 
+			</div>
+		</li>
+	{{/each}}
+</script>
   
   
   

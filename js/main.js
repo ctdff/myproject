@@ -8,8 +8,11 @@ require.config({
 	}
 });
 
-require(["index","common","router","index","login","home","workList","nsgl","test"], function(index,common,router,index,login,home,workList,nsgl,test){
+require(["index","common","router","index","login","home","workList","nsgl","mine","xtgl","about","details","resetpassword"], function(index,common,router,index,login,home,workList,nsgl,mine,test,xtgl,about,details,resetpassword){
 	var router_mappings = [
+		{
+			path:"/", resource:"views/login.html", componet:login
+		},
 		{
 			path:"/login", resource:"views/login.html", componet:login
 		},
@@ -24,11 +27,31 @@ require(["index","common","router","index","login","home","workList","nsgl","tes
 			path:"/nsgl", resource:"views/nsgl.html", componet:nsgl	
 		},
 		{
-			path:"/test", resource:"views/test.html", componet:test	
+			path:"/mine", resource:"views/test.html", componet:mine	
+		},
+		{
+			path:"/xtgl", resource:"views/xtgl.html", componet:xtgl	
+		},
+		{
+			path:"/about", resource:"views/about.html", componet:about	
+		},
+		{
+			path:"/details", resource:"views/details.html", componet:details	
+		},
+		{
+			path:"/resetpassword", resource:"views/resetpassword.html", componet:resetpassword	
 		}
 	];
 
 	router.render("workcontent");
 	router.mapper(router_mappings);
 	router.init();
+	//ÊÇ·ñµÇÂ¼£¿
+	if(!common.isLogin()){
+		router.go("/login");
+		return false;
+	}else{
+		console.log("ÎªÉ¶");
+		//router.go("/home");
+	}
 });

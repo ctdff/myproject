@@ -10,13 +10,8 @@ define(["jquery","cache","common","mui"],function($,Cache,common,mui){
 	return {
 		init:function(){
 			console.log("初始化列表");
-			mui('.mui-scroll-wrapper').scroll();//触发滚动
-			mui(".mui-slider").slider();//这句话必要
-			$("footer").hide();
-			var offsetHeight= document.body.offsetHeight;
-			var height=offsetHeight-52;
-			$("#content").height(height);
-			workList.bindClick();
+			mui(".mui-slider").slider();//滑动效果
+			//workList.bindClick();
 		}
 	}
 });

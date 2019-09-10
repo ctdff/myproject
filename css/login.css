@@ -1,58 +1,60 @@
 .p-login{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: #fff;
-}
-.p-login .inner{
-	margin-bottom: 2rem;
-    width: 100%;
-}
-.p-login .inner .bg-img{
-    width: 80%;
-}
-.p-login .content{
-    margin: 2.5rem auto 2rem auto;
-    width: 90%;
-}
-.p-login .content .item{
-	position: relative;
-	padding:0 1rem 0 4.5rem;
-	border-bottom:1px solid #E4E4E4;
-	height: 3rem;
-	font-size: 0.875rem;
-}
-/*.p-login .content .item .img{
-	margin:0 0.5rem 0 0.75rem;
-	vertical-align: middle;
-}*/
-.p-login .content .item span{
-	position: absolute;
-	left:0;
-	bottom:0.75rem;
-}
-.p-login .content .item input{
-	display: inline-block;
+    padding: 120px 11px 11px 11px;
 	height: 100%;
-	width: 100%;
-	border:none;
+    background-size: 100% 190px;
 }
-
-.p-login .content .item input:-webkit-autofill{
-	background-color: #fff !important;
-	-webkit-box-shadow: 0 0 0px 1000px white inset;
+.p-login .form {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+   /* box-shadow: 0 0 5px #ccc;*/
+    height: 100%;
+    min-height: 437px;
 }
-
-.p-login .login{
-    display: block;
-    margin: 1rem auto 0 auto;
-    width: 90%;
-    height: 2.8125rem;
-    line-height: 2.8125rem;
-    text-align: center;
-    border-radius: 5px;
+.p-login .form .header{
+	padding: 17px 0;
+	text-align: center;
+}
+.p-login .form .header .logo{
+	max-width: 50px;
+}
+.p-login .form .header .text{
+	color:#7C7C7C;
+	font-weight: bold;
+}
+.p-login .form .wrap{
+	padding: 8px 0;
+    border-bottom: 1px solid #E7E7E7;
+}
+.p-login .form .wrap .icon{
+    position: absolute;
+    margin: 16px 0px 16px 10px;
+	height: 18px;
+}
+.p-login .form .wrap .input{
+    margin-bottom: 0 !important;
+    height: 46px !important;
+	border: none !important;
+    line-height: 46px !important;
+    font-size: 14px !important;
+    color: #4f4e4e !important;
+    font-family: "微软雅黑";
+    outline: none;
+}
+.p-login .form .btn{
+    margin-top: 30px;
+    width: 100%;
+    height: 42px;
+    background-color: #49b82d;
+    border-radius: 20px;
     color: #fff;
 }
-
+.p-login .form .copyright{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -114px;
+    font-size: 12px;
+    color: #afafaf;
+}

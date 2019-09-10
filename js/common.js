@@ -1,5 +1,5 @@
 define(['mui','jquery', 'cache'], function(mui, $, cache){
-	var sessionKey = "zh-app-user";
+	var sessionKey = "pms-app-user";
 	var userInfo = cache.getJSON(sessionKey);
 	var _token = "", 
 		//hostIp = "http://xinjiang.project.agrisaas.com.cn/",
