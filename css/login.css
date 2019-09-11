@@ -1,7 +1,9 @@
 .p-login{
-    padding: 120px 11px 11px 11px;
-	height: 100%;
-    background-size: 100% 190px;
+   padding: 160px 10px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    width: 100%;
 }
 .p-login .form {
     padding-left: 30px;

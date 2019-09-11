@@ -7,6 +7,7 @@ define(["jquery","cache","mui"],function($,Cache,mui){
 				$("#userName").val(userInfo.username);
 				$("#password").val(userInfo.password);
 			}
+			$("footer").hide();
 		},
 		bindClick:function(){
 			$("#loginBtn").click(function(){

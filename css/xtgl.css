@@ -1,5 +1,61 @@
-div[class^="xtgl_"]{
+div[class^="xtgl-"]{
 	font-size: smaller !important;
+}
+.xtgl-home .img-cycle{
+	position:absolute;
+	margin-left: 10px;
+	border:2px solid red;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	background-color: #FFFFFF;
+}
+.xtgl-home .xtgl-principal-div ul{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+.xtgl-home .xtgl-principal-div{
+	float:left;
+	width:100%;
+	clear:left;
+}
+.xtgl-home .mui-pull-left{
+	    float: left;
+	    /* margin-left: 70px;
+	    margin-top: 40px; */
+}
+.xtgl-home .mui-media-body{
+	    float: left;
+	    margin-left: 30px;
+	    margin-top: 55px;
+		font-size: 21px;
+		/* width: 100%; */
+		-webkit-text-fill-color: #FFFFFF;
+}
+.xtgl-home .mui-table-view-cell .resetpassword:before{
+	content: url(../img/settings/u0.png);
+	margin-right: 15px;
+}
+.xtgl-home .mui-table-view-cell .details:before{
+	content: url(../img/settings/u3.png);
+	margin-right: 7px;
+}
+.xtgl-home .mui-table-view-cell .about:before{
+	content: url(../img/settings/u2.png);
+	margin-right: 15px;
+}
+.xtgl-home .xtgl-blank ul li{
+	/* margin-bottom: ; */
+	/* height: 50px; */
+	/* background-color: #22BB63; */
+	background-color:#22BB63;
+}
+.xtgl-home .xtgl-blank{
+	/* float:left; */
+	width:100%;
+	margin-bottom: 120px;
+	
 }
 .mui-media-body{
 	overflow: hidden;
@@ -30,4 +86,25 @@ div[class^="xtgl_"]{
 	margin-top:30px;
 	margin-left: 20px;
 	margin-right: 20px;
+}
+.xtgl-resetpassword .mui-btn{
+	margin-top: -10px;
+	width: 50%;
+	height: 42px;
+	background-color: #49b82d;
+	border-radius: 20px;
+	color: #fff;
+}
+.xtgl-resetpassword .mui-input-row{
+	margin-top: 10px;
+}
+.xtgl-resetpassword .mui-icon-eye:before {
+	font-family: Muiicons;
+    content: '\e568';
+}
+.xtgl-home .mui-table-view-cell span{
+	position: absolute;
+	font-size: 21px;
+	margin-top: 15px;
+	font-family: '宋体';
 }

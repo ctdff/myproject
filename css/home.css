@@ -49,17 +49,70 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.p-home .add{
+.p-home .oprate{
 	position: absolute;
-    bottom: 76px;
-    padding: 0 auto;
+    bottom: 0;
+	padding: 0 auto;
     width: 100%;
     text-align: center;
+}
+.p-home .oprate img{
+	width: 80px !important;
 }
 .p-home .add button{
 	background: #38a1ec;
     color: #fff;
 }
-.mui-fullscreen .mui-segmented-control~.mui-slider-group{
-	bottom: 60px;
+.p-home .mui-fullscreen .nsczwrapper{
+	bottom: 86px;
+}
+.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
+	font-size: 22px;
+	color: #49b82d;
+}
+.mui-checkbox.mui-left input[type=checkbox], .mui-radio.mui-left input[type=radio]{
+	left: 0;
+}
+.mui-checkbox.mui-left label, .mui-radio.mui-left label {
+    padding-right: 6px;
+    padding-left: 32px;
+}
+.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+	color: #49b82d;
+}
+
+#czPopover{
+	width: 80%;
+    left: 10%;
+    bottom: 20%;
+}
+#czPopover .title{
+	height: 38px;
+    background: #38bf36;
+    text-align: center;
+    color: #fff;
+    line-height: 38px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.mui-popup-inner.mypopup{
+	padding: 0;
+}
+.mui-popup-title{
+	font-weight: 100;
+	font-size: 100%;
+	height: 38px;
+    background: #41bc31;
+    text-align: center;
+    color: #fff;
+    line-height: 38px;
+}
+.mui-input-group.mygroup{
+	height: 50vh;
+    color: #666666;
+}
+.mui-popup-buttons.mybtn{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
 }

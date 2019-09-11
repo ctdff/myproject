@@ -8,7 +8,6 @@ define(["jquery","cache","common","mui"],function($,Cache,common,mui){
 			$("footer ul li").unbind("click");
 			$("footer ul li").click(function(){
 				var url = $(this).data("u");
-				console.log(url);
 				$(this).addClass("active").siblings().removeClass("active");
 				router.go(url);
 			})

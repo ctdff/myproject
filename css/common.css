@@ -390,3 +390,9 @@ footer .list .item.active.mine{
     margin-top: 5px;
 }
 
+.mui-popup-button{
+	color: #41bc31;
+}
+.mui-popup{
+	color: #666666;
+}

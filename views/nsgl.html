@@ -17,47 +17,60 @@
 		</div>
 		<div class="mui-slider-group">
 			<div id="slider_Inputs" class="mui-slider-item mui-control-content mui-active">
-				<div  class="mui-scroll-wrapper">
+				<div  class="mui-scroll-wrapper nsczwrapper">
 					<div class="mui-scroll">
 						<ul id="item1" curpage=1>
 							<li class="item">
-								<div class="row">
-									<span class="land">地块</span>
-									<span class="proName">土豆</span>
-									<span class="area">100亩</span>
+								<div class="mui-input-row mui-radio mui-left row">
+									<label>
+										土豆-10块
+										<span class="area"> 编号：1001</span>
+										
+   									</label>
+									<input name="radio1" type="radio">
 								</div>
-								<div class="time">
-									<strong>建档时间：</strong>
-									<span>2019-10-10</span>
+								
+								<div class="infos">基地名称：
+									<span class="rit">种植合作社</span>     
 								</div>
-								<h3>最近农事操作：</h3>
-								<div class="infos">
-									<div >2019-11-11 09:09         除草剂  10kg</div>
-									<div >2019-11-11 09:09         除草剂  10kg</div>
+								<div class="infos">操作人：
+									<span class="rit"> 张三</span>
+								</div>
+								<div class="infos">开始时间：
+									<span class="rit">2019-10-10</span> 
 								</div>
 							</li>
-							<li>
-								<div class="row">
-									<span class="land">地块</span>
-									<span class="proName">土豆</span>
-									<span class="area">100亩</span>
+							<li class="item">
+								<div class="mui-input-row mui-radio mui-left row">
+									<label>
+										土豆-10块
+										<span class="area"> 编号：1001</span>
+										
+   									</label>
+									<input name="radio1" type="radio">
 								</div>
-								<div class="time">
-									<strong>建档时间：</strong>
-									<span>2019-10-10</span>
+								<div class="infos">基地名称：
+									<span class="rit">种植合作社</span>     
 								</div>
-								<h3>最近农事操作：</h3>
-								<div class="infos">
-									<div >2019-11-11 09:09         除草剂  10kg</div>
-									<div >2019-11-11 09:09         除草剂  10kg</div>
+								<div class="infos">操作人：
+									<span class="rit"> 张三</span>
+								</div>
+								<div class="infos">开始时间：
+									<span class="rit">2019-10-10</span> 
 								</div>
 							</li>
 						</ul>
 					</div>
 				</div>
+				<div class="oprate">
+					<img id="bz" name="播种" src="img/bozong_icon.png" />
+					<img id="sf" name="施肥" src="img/shifei_icon.png" />
+					<img id="sy" name="施药" src="img/shiyao_icon.png" />
+					<img id="cs" name="采收" src="img/caishou_icon.png" />
+				</div>
 			</div>
 			<div id="slider_Stocks" class="mui-slider-item mui-control-content">
-				<div class="mui-scroll-wrapper">
+				<div class="mui-scroll-wrapper nsczwrapper">
 					<div class="mui-scroll">
 						<ul id="item2" curpage=1>
 							<li class="item">
@@ -79,9 +92,16 @@
 						</ul>
 					</div>
 				</div>
+				
+				<div class="oprate">
+					<img id="rl" src="img/bozong_icon.png" />
+					<img id="sw" src="img/shifei_icon.png" />
+					<img id="yy" src="img/shiyao_icon.png" />
+				</div>
+				
 			</div>
 			<div id="slider_Outputs" class="mui-slider-item mui-control-content">
-				<div class="mui-scroll-wrapper">
+				<div class="mui-scroll-wrapper nsczwrapper">
 					<div class="mui-scroll">
 						<ul curpage=1>
 							<li class="item">
@@ -103,6 +123,11 @@
 						</ul>
 					</div>
 				</div>
+				<div class="oprate">
+					<img id="tm" src="img/bozong_icon.png" />
+					<img id="tl" src="img/shifei_icon.png" />
+					<img id="yy" src="img/shiyao_icon.png" />
+				</div>
 			</div>
 			
 			
@@ -110,15 +135,55 @@
 		
 	</div>
 	
-	
-	<div class="add"><button>新建档案</button></div>
-	
-	
 </div>
 
-  
+<div id="czPopover" class="mui-popover">
+	<div>
+		<h5 class="title" id="czTitle">检测</h5>
+	<form class="mui-input-group mygroup" id="myform">
+	    <div class="mui-input-row">
+	        <label>农资：</label>
+	    	<input type="text" class="form_ipt" id="houseNames" readonly="readonly">
+	    </div>
+	    <div id="myData">
+			<div class="mui-input-row">
+		        <label>数量：</label>
+		        	
+					<select id="operatorId" name="operatorId" class="mui-btn-block form_ipt"><option value="7068f1ebf7a34645bca6fffb5e0ee841">普工1</option></select>
+		     	
+		    </div>
+		
+			<div class="mui-input-row">
+		        <label>操作人：</label>
+		        	
+					<select id="inputsId" name="inputsId" class="mui-btn-block form_ipt"><option value="85413767cb834ccca54ece4f1c928890">肥料1</option></select>
+		     	
+		    </div>
+		    <div class="mui-input-row">
+		        <label>时间：</label>
+		     	<input type="text" class="form_ipt" id="time" >
+		    </div>
+		
+		</div>
+		
+		<div class="mui-popup-buttons mybtn">
+			<span class="mui-popup-button">取消</span>
+			<span class="mui-popup-button mui-popup-button-bold">确定</span>
+		</div>
+	</form>
+	
+	</div>
+	
+</div> 
  
   
-  
+<div class="mui-popover mui-popup" id="testPopver" >
+	<div style="height: 38px;background: #4aa500;color: #fff;line-height: 38px;">
+		<h5 class="title" id="czTitle">检测</h5>
+	</div>
+	<div style="height: 100px;background: #fff;">
+		34
+	</div>
+</div>  
   
   
