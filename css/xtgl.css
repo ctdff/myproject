@@ -2,14 +2,23 @@ div[class^="xtgl-"]{
 	font-size: smaller !important;
 }
 .xtgl-home .img-cycle{
-	position:absolute;
-	margin-left: 10px;
-	border:2px solid red;
-	border-top-left-radius: 100px;
-	border-top-right-radius: 100px;
-	border-bottom-left-radius: 100px;
-	border-bottom-right-radius: 100px;
-	background-color: #FFFFFF;
+	    overflow: hidden;
+	    position: absolute;
+	    top: 30px;
+	    left: 30px;
+	    border-top-left-radius: 85px;
+	    border-top-right-radius: 85px;
+	    border-bottom-left-radius: 85px;
+	    border-bottom-right-radius: 85px;
+	    background-color: #EEEEEE;
+	    /* left: 10px; */
+	    width: 85px;
+	    height: 85px;
+}
+.xtgl-home .img-cycle img{
+	margin: 20%;
+	width: 60%;
+	height: 60%;
 }
 .xtgl-home .xtgl-principal-div ul{
 	border-top-left-radius: 20px;
@@ -26,25 +35,25 @@ div[class^="xtgl-"]{
 	    margin-top: 40px; */
 }
 .xtgl-home .mui-media-body{
-	    float: left;
-	    margin-left: 30px;
-	    margin-top: 55px;
-		font-size: 21px;
+	    /* float: left; */
+	    margin-left: 25px;
+	    margin-top: 67px;
+		font-size: 24px;
 		/* width: 100%; */
 		-webkit-text-fill-color: #FFFFFF;
 }
-.xtgl-home .mui-table-view-cell .resetpassword:before{
+/* .xtgl-home .mui-table-view-cell .resetpassword:before{
 	content: url(../img/settings/u0.png);
 	margin-right: 15px;
-}
-.xtgl-home .mui-table-view-cell .details:before{
+} */
+/* .xtgl-home .mui-table-view-cell .details:before{
 	content: url(../img/settings/u3.png);
 	margin-right: 7px;
-}
-.xtgl-home .mui-table-view-cell .about:before{
+} */
+/* .xtgl-home .mui-table-view-cell .about:before{
 	content: url(../img/settings/u2.png);
 	margin-right: 15px;
-}
+} */
 .xtgl-home .xtgl-blank ul li{
 	/* margin-bottom: ; */
 	/* height: 50px; */
@@ -54,7 +63,7 @@ div[class^="xtgl-"]{
 .xtgl-home .xtgl-blank{
 	/* float:left; */
 	width:100%;
-	margin-bottom: 120px;
+	margin-bottom: 75px;
 	
 }
 .mui-media-body{
@@ -104,7 +113,25 @@ div[class^="xtgl-"]{
 }
 .xtgl-home .mui-table-view-cell span{
 	position: absolute;
-	font-size: 21px;
-	margin-top: 15px;
+	height: 77px;
+	padding-left: 45px;
+	font-size: 18px;
+	margin-top: 20px;
 	font-family: '宋体';
+	-webkit-text-fill-color: #666666;
+}
+.xtgl-home .mui-table-view-cell .details span{
+	position: absolute;
+	height: 77px;
+	padding-left: 36px;
+	padding-bottom: 35px;
+	font-size: 18px;
+	margin-top: 20px;
+	font-family: '宋体';
+	-webkit-text-fill-color: #666666;
+}
+.xtgl-home .mui-table-view-cell a img{
+	height: 32px;
+	margin-left: 20px;
+	margin-top: 10px;
 }
