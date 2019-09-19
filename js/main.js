@@ -2,7 +2,9 @@ require.config({
 	baseUrl: "js/",
 	paths:{
 		"jquery":"jquery/jquery-1.11.1",
-		"mui":"mui/mui.min",
+		"mui":"mui/mui",
+		"pullcommon":"mui/mui.pullToRefresh",
+		// "pullmaterial":"mui/mui.pullToRefresh.material",
 		"router":"router/router",
 		"cache":"cache/cache"
 	}
@@ -42,7 +44,7 @@ require(["index","common","router","index","login","home","workList","nsgl","min
 			path:"/resetpassword", resource:"views/resetpassword.html", componet:resetpassword	
 		},
 		{
-			path:"/farmworkmanage", resource:"views/farmworkmanage.html", componet:home
+			path:"/farmworkmanage", resource:"views/farmworkmanage.html", componet:farmworkmanage
 		}
 	];
 
